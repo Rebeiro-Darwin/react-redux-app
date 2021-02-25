@@ -4,7 +4,7 @@ import {
     FETCH_DATA_FAILED,
     UPDATE_SUCCESS,
     UPDATE_FAILED,
-    HIDE_NITIFICATION,
+    HIDE_NOTIFICATION,
 } from "../actions/types";
 
 // Initial state
@@ -44,7 +44,7 @@ export default function appReducer(state = initialState, action) {
                 ...state,
                 updateStatus: action.payload.status,
             };
-        case HIDE_NITIFICATION:
+        case HIDE_NOTIFICATION:
             return {
                 ...state,
                 updateStatus: null,

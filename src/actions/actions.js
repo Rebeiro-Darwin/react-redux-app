@@ -1,4 +1,4 @@
-import { FETCH_DATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED, UPDATE_SUCCESS, UPDATE_FAILED, HIDE_NITIFICATION } from "./types";
+import { FETCH_DATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED, UPDATE_SUCCESS, UPDATE_FAILED, HIDE_NOTIFICATION } from "./types";
 import service from "../service";
 
 export const getData = () => (dispatch) => {
@@ -37,5 +37,5 @@ export const updateData = (id) => (dispatch) => {
 };
 
 export const hideNotification = () => (dispatch) => {
-  dispatch({type: HIDE_NITIFICATION })
+  dispatch({type: HIDE_NOTIFICATION })
 };

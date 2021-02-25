@@ -5,7 +5,7 @@ An application used to show users data in table format built with React, Redux, 
 
 ## Project Screen Shot(s)
 
-
+https://github.com/Rebeiro-Darwin/react-redux-app/tree/master/screenshots
 
 ## Installation and Setup Instructions
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "../store/store";
 import Home from "./Home";
-import '.././index.css';
+import '.././index.scss';
 
 const App = () => {
   return (

@@ -1,4 +1,4 @@
-import { FETCH_DATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED } from "./types";
+import { FETCH_DATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILED, UPDATE_SUCCESS, UPDATE_FAILED, HIDE_NITIFICATION } from "./types";
 import service from "../service";
 
 export const getData = () => (dispatch) => {
@@ -17,4 +17,25 @@ export const getData = () => (dispatch) => {
         payload: err.response,
       })
     );
-  };
+};
+
+export const updateData = (id) => (dispatch) => {
+  service
+    .updateData(id)
+    .then((res) =>
+      dispatch({
+        type: UPDATE_SUCCESS,
+        payload: res,
+      })
+    )
+    .catch((err) =>
+      dispatch({
+        type: UPDATE_FAILED,
+        payload: err.response,
+      })
+    );
+};
+
+export const hideNotification = () => (dispatch) => {
+  dispatch({type: HIDE_NITIFICATION })
+};

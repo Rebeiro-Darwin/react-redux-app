@@ -1,0 +1,18 @@
+table{
+    >tbody{
+        >tr{
+            >td{
+                outline: 0;
+                position:relative;
+                .button-toolbar {
+                    display: none;
+                }
+                &.in-editing {
+                    .button-toolbar{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

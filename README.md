@@ -34,7 +34,7 @@ The technologies implemented in this project are React 17, Redux and a significa
 
 This application includes below features
 1) Display of data in table format.
-2) Clicking on any table cell will display 2 buttons: Save and Cancel.
+2) Clicking on any table cell will display 2 buttons: **Save** and **Cancel**.
 3) While editing a cell, if we click on any other cell then the changes will be discarded.
 4) Upon editing the table cell: clicking on **Save** will call the API and notification message will be displayed based on the API response.
 5) On click of **Cancel** button, edit mode will be cancelled.
